@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: 'Noto Sans TC', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      height: 70%;
+    }
+
+    @media(min-width: 992px) {
+      body {
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: '-';
+        width: 70%;
+        height: 500px;
+        position: absolute;
+        background: white;
+        box-shadow: 0px 3px 10px rgb(194, 193, 193);
+        transform: rotate(45deg);
+        left: 60%;
+        top: -30%;
+        z-index: 17;
+      }
+
+      .container::after {
+        content: '-';
+        width: 70%;
+        height: 500px;
+        position: absolute;
+        background: white;
+        box-shadow: 0px 3px 10px rgb(194, 193, 193);
+        transform: rotate(45deg);
+        left: -35%;
+        top: 50%;
+        z-index: 17;
+      }
+    }
+
+    /* .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    } */
+
+    /* .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    } */
+    /* .col {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    } */
+
+    /* .img-fluid {
+      max-width: 100%;
+      height: auto;
+    } */
+  </style>
+</head>
+
+<body class="d-lg-flex justify-content-lg-center align-items-lg-center">
+  <div class="container bg-white shadow">
+    <div class="row h-100 justify-content-lg-center align-items-lg-center">
+      <div class="col-12 col-lg-5 bg-dark h-100 p-0 mb-3">
+        <!-- 這裡的h-100是要繼承高度 可以讓圖片設定height:100%時充滿整個div p-0 是因為背景是黑色的有多出左右padding -->
+        <img src="picture.jpg" alt="" style="width:100%;height:100%;object-fit: cover;">
+      </div>
+
+      <div class="col-12 col-lg-7 d-flex flex-column align-items-center">
+        <div class="mb-5">
+          <h3>Front-end Designer</h3>
+          <h1 style="font-size:5rem">Kun Chain</h1>
+          <h4 style="font-size:2rem">泰山職訓局</h4>
+        </div>
+        <p>
+          住址:出去左轉100公尺右轉再右轉再右轉再右轉右轉<br>
+          手機:0963980232<br>
+          E-Mail:anleader911@gmail.com<br>
+          網站:https://www.facebookkunkun.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
